@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="teste.css">
+    <title>Aprendendo GIT</title>
+</head>
+<body>
+    <header>
+        <h1>Aprendendo GIT</h1>
+    </header>
+
+    <div id="msg">
+        Minha primeira mensagem!!
+    </div>
+    <br>
+    <div>
+        <h3>Códigos Usados</h3>
+        <p>Adicionar o nome de usuário GLOBAL: git config --global user.name "SeuNome"</p>
+        <p>Adicionar o email GLOBAL: git config --global user.email "seuemail@seuemail.com"</p>
+
+        <p>Adicionar o nome de usuário LOCAL: git config user.name "SeuNome"</p>
+        <p>Adicionar o email LOCAL: git config user.email "seuemail@seuemail.com"</p>
+
+        <p>Verificar informações globais do GIT: git config --global --list</p>
+        <p>Verificar informações locai do GIT: git config --list</p>
+
+        <p>Deletar o repositório local: rm -rf .git</p>
+        <p>Verificar se  ainda existe arquivos e pastas escondidas: ls -lah</p>
+
+        <p>Iniciar um repositório: git init</p>
+        <p>Clonar um repositório: git clone endereçoHTMLdoRepositório.git</p>
+
+        <p>Verificar o status do repositório: git status</p>
+
+        <p>Tirar um arquivo do STAGE, mas mantendo a configuração feita: git reset nomeDoArquivo</p>
+        <p>Manter um arquivo no STAGE, mas apagando as modificações feitas: git restore nomeDoArquivo</p>
+
+        <p>Ver a diferença dos arquivos em STAGE para os que não estão: git diff</p>
+        <p>Para sair de END: q</p>
+
+        <p>Commitar os arquivos em STAGE: git commit -m "mensagem explanatória sobre o que commir realizado"</p>
+        <p>Commitar os arquivos em STAGE adicionando algo que esteja fora do STAGE: git commit -a -m "mensagem explanatória sobre o que commir realizado"</p>
+        <p>Fazer um ajuste de última hora em um arquivo ja commitado: git add . e depois digita: git commit --amend -m "mensagem explanatória"</p>
+
+    </div>
+
+    <div><input type="button" value="click aqui" onclick="testandoGit()"></div>
+
+    
+
+    <script src="teste.js"></script>
+</body>
+</html>

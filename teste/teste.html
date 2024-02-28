@@ -12,40 +12,34 @@
     </header>
 
     <div id="msg">
-        Minha primeira mensagem!!
+        Está organizado em Ações ou algo específico como Repositório, por exemplo.
     </div>
     <br>
     <div>
         <h3>Códigos Usados</h3>
+
+        <h1>Adições</h1>
         <p>Adicionar o nome de usuário GLOBAL: git config --global user.name "SeuNome"</p>
         <p>Adicionar o email GLOBAL: git config --global user.email "seuemail@seuemail.com"</p>
-
         <p>Adicionar o nome de usuário LOCAL: git config user.name "SeuNome"</p>
         <p>Adicionar o email LOCAL: git config user.email "seuemail@seuemail.com"</p>
-
-        <p>Verificar informações globais do GIT: git config --global --list</p>
-        <p>Verificar informações locai do GIT: git config --list</p>
-
-        <p>Deletar o repositório local: rm -rf .git</p>
-        <p>Verificar se  ainda existe arquivos e pastas escondidas: ls -lah</p>
-
-        <p>Iniciar um repositório: git init</p>
-        <p>Clonar um repositório: git clone endereçoHTMLdoRepositório.git</p>
-
-        <p>Verificar o status do repositório: git status</p>
-
         <p>Tirar um arquivo do STAGE, mas mantendo a configuração feita: git reset nomeDoArquivo</p>
         <p>Manter um arquivo no STAGE, mas apagando as modificações feitas: git restore nomeDoArquivo</p>
-
         <p>Ver a diferença dos arquivos em STAGE para os que não estão: git diff</p>
-        <p>Para sair de END: q</p>
-
         <p>Commitar os arquivos em STAGE: git commit -m "mensagem explanatória sobre o que commir realizado"</p>
         <p>Commitar os arquivos em STAGE adicionando algo que esteja fora do STAGE: git commit -a -m "mensagem explanatória sobre o que commir realizado"</p>
         <p>Fazer um ajuste de última hora em um arquivo ja commitado, digite: git add . e depois digita: git commit --amend -m "mensagem explanatória"</p>
 
-        <p>Diferença do último commit pro STAGED: git diff --staged (Lembrar de adicionar os arquivos ao STAGE)</p>
+        <p>Diferença do último commit pro STAGED: git diff --staged (Lembrar de adicionar os arquivos ao STAGE antes de enviar o comando.)</p>
 
+
+        <h1>Clonar</h1>
+        <p>Clonar um repositório: git clone endereçoHTMLdoRepositório.git</p>
+
+        <h1>Deletar</h1>
+        <p>Deletar o repositório local: rm -rf .git</p>
+
+        <h1>Verificações</h1>
         <p>Verificar os registros de commit: git log</p>
         <p>Verificar os 2 ultimos registros de commit: git log -2</p>
         <p>Verificar somente a mensagem dos 2 ultimos registros de commit: git log --oneline -2</p>
@@ -54,10 +48,14 @@
         <p>Verificar os registros de commit pelo nome do autor: git log --author="nomeDoAutor"</p>
         <p>Verificar os registro resumidos: git shortlog</p>
         <p>Verificar o registro das ações feitas dentro do repositório: git reflog</p>
-        <p>Informações sobre o remote: git remote show origin</p>
-        <p>Mudar o endereço de repositório remoto: git remote set-url origin nomeURL.git</p>
+        <p>Verificar informações sobre o remote: git remote show origin</p>
+        <p>Verificar o repositório remoto: git remote -v</p>
+        <p>Verificar informações globais do GIT: git config --global --list</p>
+        <p>Verificar informações locai do GIT: git config --list</p>
+        <p>Verificar o status do repositório: git status</p>
+        <p>Verificar se  ainda existe arquivos e pastas escondidas: ls -lah</p>
 
-        <h1>BRANCH</h1>
+        <h1>Branch</h1>
         <p>Criar uma branch: git branch nomeDaBranch</p>
         <p>Criar e mudar automaticamente para a nova branch: git checkout -b nomeDaBranch</p>
         <p>Deletar uma branch: git branch -D nomeDaBranch</p>
@@ -65,9 +63,10 @@
         <p>Ver a diferença entre duas branches: git diff nomeDaBranch nommeDaOutraBranch</p>
 
         <h1>Repositório</h1>
+        <p>Iniciar um repositório: git init</p>
         <p>Adicionar um repositório remoto: git remote add origin endereçoDpRepositorioRemoto.git</p>
         <p>Remover um repositório remoto: git remote remove origin endereçoDpRepositorioRemoto.git</p>
-        <p>Verificar o repositório remoto: git remote -v</p>
+        <p>Mudar o endereço de repositório remoto: git remote set-url origin nomeNovoEndereco.git</p>
 
         <h1>Push</h1>
         <p>Enviar os commits: git push -u origin nomeDaBranch</p>
@@ -77,6 +76,7 @@
 
 
         <p>**O checkout serve para navegar entre as branches**</p>
+        <p>**Para sair de END: q</p>
     </div>
 
     <div><input type="button" value="click aqui" onclick="testandoGit()"></div>

@@ -23,18 +23,6 @@
         <p>Adicionar o email GLOBAL: git config --global user.email "seuemail@seuemail.com"</p>
         <p>Adicionar o nome de usuário LOCAL: git config user.name "SeuNome"</p>
         <p>Adicionar o email LOCAL: git config user.email "seuemail@seuemail.com"</p>
-        <p>Tirar um arquivo do STAGE, mas mantendo a configuração feita: git reset nomeDoArquivo</p>
-        <p>Manter um arquivo no STAGE, mas apagando as modificações feitas: git restore nomeDoArquivo</p>
-        <p>Ver a diferença dos arquivos em STAGE para os que não estão: git diff</p>
-        <p>Commitar os arquivos em STAGE: git commit -m "mensagem explanatória sobre o que commir realizado"</p>
-        <p>Commitar os arquivos em STAGE adicionando algo que esteja fora do STAGE: git commit -a -m "mensagem explanatória sobre o que commir realizado"</p>
-        <p>Fazer um ajuste de última hora em um arquivo ja commitado, digite: git add . e depois digita: git commit --amend -m "mensagem explanatória"</p>
-
-        <p>Diferença do último commit pro STAGED: git diff --staged (Lembrar de adicionar os arquivos ao STAGE antes de enviar o comando.)</p>
-
-
-        <h1>Clonar</h1>
-        <p>Clonar um repositório: git clone endereçoHTMLdoRepositório.git</p>
 
         <h1>Deletar</h1>
         <p>Deletar o repositório local: rm -rf .git</p>
@@ -55,6 +43,22 @@
         <p>Verificar o status do repositório: git status</p>
         <p>Verificar se  ainda existe arquivos e pastas escondidas: ls -lah</p>
 
+        <h1>Commit</h1>
+        <p>Tirar um arquivo do STAGE, mas mantendo a configuração feita: git reset nomeDoArquivo</p>
+        <p>Manter um arquivo no STAGE, mas apagando as modificações feitas: git restore nomeDoArquivo</p>
+        <p>Ver a diferença dos arquivos em STAGE para os que não estão: git diff</p>
+        <p>Commitar os arquivos em STAGE: git commit -m "mensagem explanatória sobre o que commir realizado"</p>
+        <p>Commitar os arquivos em STAGE adicionando algo que esteja fora do STAGE: git commit -a -m "mensagem explanatória sobre o que commir realizado"</p>
+        <p>Fazer um ajuste de última hora em um arquivo ja commitado, digite: git add . e depois digita: git commit --amend -m "mensagem explanatória"</p>
+        <p>Diferença do último commit pro STAGED: git diff --staged (Lembrar de adicionar os arquivos ao STAGE antes de enviar o comando.)</p>
+
+        <h1>Repositório</h1>
+        <p>Iniciar um repositório: git init</p>
+        <p>Clonar um repositório: git clone endereçoHTMLdoRepositório.git</p>
+        <p>Adicionar um repositório remoto: git remote add origin endereçoDpRepositorioRemoto.git</p>
+        <p>Remover um repositório remoto: git remote remove origin endereçoDpRepositorioRemoto.git</p>
+        <p>Mudar o endereço de repositório remoto: git remote set-url origin nomeNovoEndereco.git</p>
+
         <h1>Branch</h1>
         <p>Criar uma branch: git branch nomeDaBranch</p>
         <p>Criar e mudar automaticamente para a nova branch: git checkout -b nomeDaBranch</p>
@@ -62,18 +66,15 @@
         <p>Renomear uma branch: git branch -m NovoNomeDaBranch</p>
         <p>Ver a diferença entre duas branches: git diff nomeDaBranch nommeDaOutraBranch</p>
 
-        <h1>Repositório</h1>
-        <p>Iniciar um repositório: git init</p>
-        <p>Adicionar um repositório remoto: git remote add origin endereçoDpRepositorioRemoto.git</p>
-        <p>Remover um repositório remoto: git remote remove origin endereçoDpRepositorioRemoto.git</p>
-        <p>Mudar o endereço de repositório remoto: git remote set-url origin nomeNovoEndereco.git</p>
-
         <h1>Push</h1>
         <p>Enviar os commits: git push -u origin nomeDaBranch</p>
 
         <h1>Pull</h1>
         <p>Trazer todas as atualizações da branch remota para meu repositório local: git pull origin nomeDaBranch</p>
 
+        <h1>Merge</h1>
+        <p>**Para mergear(mesclar) uma branch com a "main" deve-se fazer primeiro o checkout para a main(git checkout main) e depois fazer o merge(git merge nomeDaBranch).</h1>
+        <p></p>
 
         <p>**O checkout serve para navegar entre as branches**</p>
         <p>**Para sair de END: q</p>

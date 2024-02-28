@@ -44,7 +44,39 @@
         <p>Commitar os arquivos em STAGE adicionando algo que esteja fora do STAGE: git commit -a -m "mensagem explanatória sobre o que commir realizado"</p>
         <p>Fazer um ajuste de última hora em um arquivo ja commitado, digite: git add . e depois digita: git commit --amend -m "mensagem explanatória"</p>
 
-        
+        <p>Diferença do último commit pro STAGED: git diff --staged (Lembrar de adicionar os arquivos ao STAGE)</p>
+
+        <p>Verificar os registros de commit: git log</p>
+        <p>Verificar os 2 ultimos registros de commit: git log -2</p>
+        <p>Verificar somente a mensagem dos 2 ultimos registros de commit: git log --oneline -2</p>
+        <p>Verificar os registros de commit com gráfico histórico: git log --graph</p>
+        <p>Verificar o log a partir do nome da branch: git log nomeDaBranch</p>
+        <p>Verificar os registros de commit pelo nome do autor: git log --author="nomeDoAutor"</p>
+        <p>Verificar os registro resumidos: git shortlog</p>
+        <p>Verificar o registro das ações feitas dentro do repositório: git reflog</p>
+        <p>Informações sobre o remote: git remote show origin</p>
+        <p>Mudar o endereço de repositório remoto: git remote set-url origin nomeURL.git</p>
+
+        <h1>BRANCH</h1>
+        <p>Criar uma branch: git branch nomeDaBranch</p>
+        <p>Criar e mudar automaticamente para a nova branch: git checkout -b nomeDaBranch</p>
+        <p>Deletar uma branch: git branch -D nomeDaBranch</p>
+        <p>Renomear uma branch: git branch -m NovoNomeDaBranch</p>
+        <p>Ver a diferença entre duas branches: git diff nomeDaBranch nommeDaOutraBranch</p>
+
+        <h1>Repositório</h1>
+        <p>Adicionar um repositório remoto: git remote add origin endereçoDpRepositorioRemoto.git</p>
+        <p>Remover um repositório remoto: git remote remove origin endereçoDpRepositorioRemoto.git</p>
+        <p>Verificar o repositório remoto: git remote -v</p>
+
+        <h1>Push</h1>
+        <p>Enviar os commits: git push -u origin nomeDaBranch</p>
+
+        <h1>Pull</h1>
+        <p>Trazer todas as atualizações da branch remota para meu repositório local: git pull origin nomeDaBranch</p>
+
+
+        <p>**O checkout serve para navegar entre as branches**</p>
     </div>
 
     <div><input type="button" value="click aqui" onclick="testandoGit()"></div>

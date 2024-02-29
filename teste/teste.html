@@ -39,9 +39,9 @@
         <p>Verificar informações sobre o remote: git remote show origin</p>
         <p>Verificar o repositório remoto: git remote -v</p>
         <p>Verificar informações globais do GIT: git config --global --list</p>
-        <p>Verificar informações locai do GIT: git config --list</p>
+        <p>Verificar informações locais do GIT: git config --list</p>
         <p>Verificar o status do repositório: git status</p>
-        <p>Verificar se  ainda existe arquivos e pastas escondidas: ls -lah</p>
+        <p>Verificar se ainda existe arquivos e pastas escondidas: ls -lah</p>
 
         <h1>Commit</h1>
         <p>Tirar um arquivo do STAGE, mas mantendo a configuração feita: git reset nomeDoArquivo</p>
@@ -51,6 +51,8 @@
         <p>Commitar os arquivos em STAGE adicionando algo que esteja fora do STAGE: git commit -a -m "mensagem explanatória sobre o que commir realizado"</p>
         <p>Fazer um ajuste de última hora em um arquivo ja commitado, digite: git add . e depois digita: git commit --amend -m "mensagem explanatória"</p>
         <p>Diferença do último commit pro STAGED: git diff --staged (Lembrar de adicionar os arquivos ao STAGE antes de enviar o comando.)</p>
+        <p>Desfazer todas as mudanças não commitadas: git checkout -- nomeDoArquivo     por exemplo: git checkout -- index.html</p>
+        <p>Descartar todas as modificações que não foram commitadas(paga até as que estão em STAGE): git reset --hard HEAD</p>
 
         <h1>Repositório</h1>
         <p>Iniciar um repositório: git init</p>
@@ -73,20 +75,32 @@
         <p>Trazer todas as atualizações da branch remota para meu repositório local: git pull origin nomeDaBranch</p>
 
         <h1>Merge</h1>
-        <p>**Para mergear(mesclar) uma branch com a "main" deve-se fazer primeiro o checkout para a main(git checkout main) e depois fazer o merge(git merge nomeDaBranch).</h1>
+        <p>**Para mergear(mesclar) uma branch com a "main" deve-se fazer primeiro o checkout para a main(git checkout main) e depois fazer o merge(git merge nomeDaBranch)**</h1>
         <p>***Preserva o histórico completo e a ordem original dos commits.***</p>
-            <p>Executar um merge: git merge nomeDaBranch</p>
+        <p>Executar um merge: git merge nomeDaBranch</p>
         <p>Abortar um merge(caso de conflito): git merge --abort</p>
-        <p>Continuar merge. Em caso de não abortar um merge e com todos os conflitos resolvidos mergear: git merge --continue</p>]
+        <p>Continuar merge. Em caso de não abortar um merge e com todos os conflitos resolvidos mergear: git merge --continue</p>
         
 
-        <p>Rebase</p>
+        <h1>Rebase</h1>
         <p>**Rebase move o histórico de commits da branch de origem pra branch de destino**</p>
         <p>***O rebase cria um histórico linear que pode ser util para projetos que preferem um histórico mais limpo.***</p>
         <p>Realizar um rebase: git rebase branchDestino</p>
         <p>Realizar um rebase levando apenas um certo numero de ultimos commit: git rebase -i HEAD~3</p>
         <p>Abortar Rebase: git rebase --abort</p>
         <p>Continuar Rebase: git rebase --continue</p>
+
+        <h1>TAG</h1>
+        <p>*Tags servem para marcar pontos específicos no histórico do respositório e marcar versões de lançamento.*</p>
+        <p>**TAGs servem para Versões de lançamento, Pontos de controle, Integridade e verificação**</p>
+        <p>***TAG leve é um ponteiro para um commit específico***</p>
+        <p>****TAG anotada é uma TAG leve com uma anotação****</p>
+        <p>Ver todas as tas: git tag</p>
+        <p>Criar uma tag: git tag nomeDaSuaVersão</p>
+        <p>Remove uma tag: git tag -d nomeDaSuaTag</p>
+        <p>Criar uma tag anotada: git tag -a nomeDaSuaTag -m "mensagem"</p>
+        <p>Enviar uma tag especifica para o repositorio remoto: git push origin nomeDaSuaTag</p>
+        <p>Excluir uma tag do repositório remoto: git push origin --delete nomeDaSuaTag</p>
 
         <p>**Merge cria um novo commit a partir daa união de outra branch mantendo o histórico**</p>
         <p>**Antes de fazer um merge ou rebase é necessário atualizar a main antes**</p>

@@ -50,9 +50,18 @@
         <p>Commitar os arquivos em STAGE: git commit -m "mensagem explanatória sobre o que commir realizado"</p>
         <p>Commitar os arquivos em STAGE adicionando algo que esteja fora do STAGE: git commit -a -m "mensagem explanatória sobre o que commir realizado"</p>
         <p>Fazer um ajuste de última hora em um arquivo ja commitado, digite: git add . e depois digita: git commit --amend -m "mensagem explanatória"</p>
+        <p>Fazer um ajuste na mensagem do último commit: git commit --amend  (Para sair e salvar digite CRTL+C e depois digite (:wq+ENTER))</p>
         <p>Diferença do último commit pro STAGED: git diff --staged (Lembrar de adicionar os arquivos ao STAGE antes de enviar o comando.)</p>
         <p>Desfazer todas as mudanças não commitadas: git checkout -- nomeDoArquivo     por exemplo: git checkout -- index.html</p>
         <p>Descartar todas as modificações que não foram commitadas(paga até as que estão em STAGE): git reset --hard HEAD</p>
+        <p>Apagar o último commit feito: git reset --hard HEAD~1</p>
+        <p>Voltar a um determinado commit: git revert hashDoCommit (Vá no graphico, clique no commit que você quer e a HASH dele vai aparecer)</p>
+        <p>Mudar de branch mantendo todas as alterações já feitas:
+            Passo 1: git stash
+            Passo 2: Mudar de branch
+            Passo 3: git stash pop (Se quiser apagar o que ficou no stash) ou git stash apply(mantém o stash)
+        </p>
+
 
         <h1>Repositório</h1>
         <p>Iniciar um repositório: git init</p>
@@ -70,6 +79,7 @@
 
         <h1>Push</h1>
         <p>Enviar os commits: git push -u origin nomeDaBranch</p>
+        <p>Desfazer um commit remoto, mas que foi apagado localmente: git push origin main --force</p>
 
         <h1>Pull</h1>
         <p>Trazer todas as atualizações da branch remota para meu repositório local: git pull origin nomeDaBranch</p>
